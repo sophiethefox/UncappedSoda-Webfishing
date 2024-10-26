@@ -22,7 +22,7 @@ public class PlayerPatch : IScriptMod
             t => t is IdentifierToken { Name: "player_scale" },
             t => t.Type is TokenType.OpAssign
         ]);
-        //  "growth": player_scale =
+        //  "shrink": player_scale =
         var shrinkMatch = new MultiTokenWaiter([
             t => t is ConstantToken { Value: StringVariant { Value: "shrink" } },
             t => t.Type is TokenType.Colon,
