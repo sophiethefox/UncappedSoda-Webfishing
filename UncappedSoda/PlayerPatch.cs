@@ -49,7 +49,7 @@ public class PlayerPatch : IScriptMod
                 yield return token;
                 yield return new IdentifierToken("player_scale");
                 yield return new Token(TokenType.OpAdd);
-                yield return new ConstantToken(new RealVariant(0.5));
+                yield return new ConstantToken(new RealVariant(0.1));
 
                 // Reset since this matches multiple times
                 growthMatch.Reset();
